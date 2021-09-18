@@ -29,7 +29,11 @@ public class EncapDemo {
 
     public void setAge(int newAge) {
         if (newAge > 30) {
+            System.out.println("Nilai maksimal adalah 30");
             age = 30;
+        } else if (newAge < 18) {
+            System.out.println("Nilai minimal adalah 18");
+            age = 18;
         } else {
             age = newAge;
         }
